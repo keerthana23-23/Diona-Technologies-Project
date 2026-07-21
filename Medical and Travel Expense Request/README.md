@@ -1,34 +1,50 @@
-<<<<<<< HEAD
-# Expense Document Generator
+# Medical and Travel Expense Request
 
-This simple web assignment demonstrates how to generate PDF-style content dynamically using HTML, CSS, and JavaScript.
+This project recreates the Medical and Travel Expense Request PDF using HTML, CSS, and JavaScript. The solution supports dynamic data rendering and can generate PDF-style output directly from the browser.
 
 ## Features
 
-- Exact two-page layout matching the attached sample PDFs
-- First page includes the WCB-style header, claim metadata, and expense sections
-- Second page includes bus/taxi fare details, consent statement, and no repeated top header
-- Footer shows the Worker App ID and submission timestamp on each page
-- Dynamic tables for prescription drugs, OTC drugs, medical supplies, parking, mileage, and transport
-- Buttons to switch between a small sample dataset and a larger dynamic dataset
-- Print / Save as PDF support through the browser
+- Dynamic data-driven content generation
+- PDF-like layout with headers, footers, and page numbering
+- Dynamic tables for medical and travel expenses
+- Supports different datasets without modifying the HTML structure
+- Print and Save as PDF functionality from the browser
+- Responsive layout matching the provided reference PDF
 
-## Files
+## Project Files
 
-- `index.html` — the main page layout and control buttons
-- `styles.css` — PDF-like styling, table formatting, headers, and footers
-- `script.js` — dynamic data generation, rendering functions, and event handlers
+- `expense_report.html` – Main HTML file used to view the project.
+- `expense_dynamic_data.js` – Contains the dynamic input data. Update this file to test different datasets.
+- `expense_styles.css` – Styles for PDF layout, tables, headers, and footers.
+- `script.js` – Rendering logic and dynamic content generation.
+- `index.html` – Entry page for the project.
 
-## How to run
+## How to Run
 
-1. Open `index.html` in a browser.
-2. Click `Small dataset` or `Large dataset` to update the document content dynamically.
-3. Click `Print / Save as PDF` to preview the output.
+1. Download or clone the repository.
+2. Open `expense_report.html` in a web browser.
+3. Modify the data in `expense_dynamic_data.js` to test different scenarios.
+4. Use the browser's Print option to generate a PDF.
 
-## Notes
+## Dynamic Data
 
-- Replace `Your Name` in `script.js` with your actual name before final submission.
-- The page numbers are rendered by JavaScript and appear in each document footer.
-=======
-# stephen_medical-bill
->>>>>>> 9f414d820e7342c1959729bad84cb048977d3cca
+The project supports dynamic content including:
+
+- Worker information
+- Claim details
+- Expense entries
+- Prescription and medical expenses
+- Travel and transportation expenses
+- Submission and footer information
+
+## Demo Video
+
+[Watch Demo Video][(https://drive.google.com/file/d/1mahh5iXh2PHsXw-RbpjlD3c17jjWG7fg/view?Assumptions](https://drive.google.com/file/d/1mahh5iXh2PHsXw-RbpjlD3c17jjWG7fg/view?usp=drive_link)
+
+- Input data is provided through JavaScript objects in `expense_dynamic_data.js`.
+- PDF generation is handled through the browser's print functionality.
+- Layout behavior has been tested with different data volumes to ensure consistency.
+
+## Challenge Faced
+
+One challenge was supporting different amounts of data while maintaining the layout, which was resolved through dynamic content generation using JavaScript and testing with multiple datasets.
