@@ -1,34 +1,52 @@
-<<<<<<< HEAD
-# Expense Document Generator
+# Worker Progress Report
 
-This simple web assignment demonstrates how to generate PDF-style content dynamically using HTML, CSS, and JavaScript.
+This project recreates the Worker Progress Report PDF using HTML, CSS, and JavaScript. The solution dynamically generates report content from JavaScript data and maintains a PDF-style layout suitable for printing or saving as a PDF.
 
 ## Features
 
-- Exact two-page layout matching the attached sample PDFs
-- First page includes the WCB-style header, claim metadata, and expense sections
-- Second page includes bus/taxi fare details, consent statement, and no repeated top header
-- Footer shows the Worker App ID and submission timestamp on each page
-- Dynamic tables for prescription drugs, OTC drugs, medical supplies, parking, mileage, and transport
-- Buttons to switch between a small sample dataset and a larger dynamic dataset
-- Print / Save as PDF support through the browser
+- Dynamic report generation using JavaScript
+- PDF-style layout with header, footer, and page numbering
+- Responsive design that adapts to different data sets
+- Dynamic employee and progress information
+- Browser-based PDF generation using Print / Save as PDF
+- Structured layout matching the provided reference document
 
-## Files
+## Project Files
 
-- `index.html` — the main page layout and control buttons
-- `styles.css` — PDF-like styling, table formatting, headers, and footers
-- `script.js` — dynamic data generation, rendering functions, and event handlers
+- `index.html` – Main entry point for the application.
+- `styles.css` – Stylesheet responsible for layout, formatting, and PDF presentation.
+- `script.js` – Contains the dynamic data rendering and report generation logic.
+- `README.md` – Project documentation.
 
-## How to run
+## How to Run
 
-1. Open `index.html` in a browser.
-2. Click `Small dataset` or `Large dataset` to update the document content dynamically.
-3. Click `Print / Save as PDF` to preview the output.
+1. Download or clone the repository.
+2. Open `index.html` in a web browser.
+3. Update the sample data in `script.js` if required.
+4. Refresh the page to view the updated report.
+5. Use the browser's Print option to generate a PDF.
 
-## Notes
+## Dynamic Elements
 
-- Replace `Your Name` in `script.js` with your actual name before final submission.
-- The page numbers are rendered by JavaScript and appear in each document footer.
-=======
-# stephen_medical-bill
->>>>>>> 9f414d820e7342c1959729bad84cb048977d3cca
+The report supports dynamic content such as:
+
+- Worker information
+- Reporting details
+- Progress updates
+- Dates and timelines
+- Summary information
+- Page numbering
+
+## Demo Video
+
+[View Demo Video](https://drive.google.com/file/d/1xpFvry9KOewr2dR2weh3NAWkyxZkB65s/view?usp=drive_link)
+
+## Assumptions
+
+- Input data is supplied through JavaScript objects.
+- PDF generation is handled through the browser's print functionality.
+- The layout has been tested with different data scenarios to ensure consistency.
+
+## Challenge Faced
+
+One challenge was supporting different amounts of data while maintaining the report layout, which was resolved by generating the content dynamically using JavaScript and testing with multiple datasets.
