@@ -31,5 +31,7 @@ This simple web assignment demonstrates how to generate PDF-style content dynami
 - The page numbers are rendered by JavaScript and appear in each document footer.
 =======
 # Video : Keerthana M S
-Excercise 1 : https://github.com/keerthana23-23/Diona-Technologies-Project
+Excercise 1 : [https://github.com/keerthana23-23/Diona-Technologies-Project](https://drive.google.com/file/d/1mahh5iXh2PHsXw-RbpjlD3c17jjWG7fg/view?usp=drive_link)
+
+
 
