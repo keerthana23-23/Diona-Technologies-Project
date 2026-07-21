@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical &amp; Travel Expense Request</title>
+    <link rel="stylesheet" href="expense_styles.css">
+</head>
+<body>
+    <!-- PAGE 1 -->
+    <div class="page-container">
+        <!-- Header Section -->
+        <header class="form-header">
+            <div class="logo-section">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/WCB_of_Manitoba_logo.svg" alt="WCB Manitoba Logo" class="wcb-logo">
+            </div>
+            <div class="address-section">
+                <p>333 Broadway</p>
+                <p>Winnipeg, MB R3C 4W3</p>
+                <p>Phone: (204) 954-4321</p>
+                <p>Toll Free: 1-855-954-4321</p>
+                <p>wcb.mb.ca</p>
+            </div>
+            <div class="title-section">
+                <h1>Medical &amp; Travel Expense<br>Request</h1>
+                <div class="claim-box">
+                    <span>Claim No. <span id="claim-number-display"></span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Intro Text -->
+        <p class="intro-text"><span class="requester-name" id="requester-name-display"></span> requested reimbursement for the following medical and/or travel expenses:</p>
+
+        <!-- Dynamic Tables Container for Page 1 -->
+        <div id="tables-container-page-1">
+            <!-- Tables will be injected here by JavaScript -->
+        </div>
+
+        <!-- Page 1 Footer -->
+        <footer class="form-footer" style="margin-top: auto;">
+            <div class="footer-left">
+                Worker App ID: <span id="worker-app-id-1"></span>
+            </div>
+            <div class="footer-right">
+                Submitted: <span class="submitted-date"></span><br>
+                <span class="page-number-display"></span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page-container">
+        <!-- Dynamic Tables Container for Page 2 -->
+        <div id="tables-container-page-2">
+            <!-- Tables will be injected here by JavaScript -->
+        </div>
+
+        <!-- Privacy Note -->
+        <div class="privacy-note">
+            <label>
+                <input type="checkbox" checked disabled>
+                I understand that the <a href="#">Privacy Notice</a> applies to the personal information collected in this document.
+            </label>
+        </div>
+
+        <!-- Page 2 Footer -->
+        <footer class="form-footer" style="margin-top: auto;">
+            <div class="footer-left">
+                Worker App ID: <span id="worker-app-id-2"></span>
+            </div>
+            <div class="footer-right">
+                Submitted: <span class="submitted-date"></span><br>
+                <span class="page-number-display"></span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Data and Logic -->
+    <script src="expense_dynamic_data.js"></script>
+</body>
+</html>
